@@ -165,8 +165,6 @@ body {
     color: #999;
     font-size: 1.3rem;
 }
-/* ===== SHOP CARDS BORDER + EFFECT ===== */
-
 .shop .box {
     border: 2px solid #f1f1f1;
     transition: 0.3s ease;
@@ -178,7 +176,6 @@ body {
     transform: translateY(-5px);
 }
 
-/* Soft corner glow */
 .shop .box::before {
     content: '';
     position: absolute;
@@ -195,7 +192,7 @@ body {
 
 /* =================== MEDIA QUERIES =================== */
 
-/* For mobile devices (max-width: 767px) */
+/* For mobile devices */
 @media (max-width: 767px) {
     .about {
         flex-direction: column;
@@ -232,7 +229,7 @@ body {
     }
 }
 
-/* For tablets and desktops (min-width: 768px) */
+/* For tablets and desktops  */
 @media (min-width: 768px) {
     .about {
         flex-wrap: nowrap;
@@ -256,7 +253,7 @@ body {
     }
 }
 
-/* For shop section only - separate media query */
+/* For shop section  */
 @media (max-width: 767px) {
     .shop .box-container {
         grid-template-columns: 1fr;
@@ -278,4 +275,5 @@ body {
     .shop .box-container {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
